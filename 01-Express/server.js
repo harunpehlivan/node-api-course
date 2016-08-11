@@ -5,7 +5,6 @@ const app = express();
 const bodyParser = require('body-parser');
 const cors = require('cors');
 
-app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
 
@@ -39,7 +38,8 @@ app.post('/api/contacts', (request, response) => {
     id: contacts.length + 1,
     first_name: request.body.first_name,
     last_name: request.body.last_name,
-    email: request.body.email
+    email: request.body.email,
+    website: request.body.website
   };
 
   contacts.push(contact);
@@ -87,7 +87,7 @@ app.delete('/api/contacts/:id', (request, response) => {
 });
 
 const hostname = 'localhost';
-const port = 3000;
+const port = 3001;
 
 const server = app.listen(port, hostname, () => {
 

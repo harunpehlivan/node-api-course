@@ -9,7 +9,6 @@ const uriUtil    = require('mongodb-uri');
 const app = express();
 const router = express.Router();
 
-app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
 
@@ -24,7 +23,7 @@ app.use('/api/contacts', require('./api/contacts/routes/put_contact'));
 app.use('/api/contacts', require('./api/contacts/routes/delete_contact'));
 
 const hostname = 'localhost';
-const port = 3000;
+const port = 3001;
 const server = app.listen(port, hostname, () => {
 
   mongoose.connect(mongooseUri, dbOptions, (err) => {
