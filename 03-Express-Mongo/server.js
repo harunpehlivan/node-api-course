@@ -4,7 +4,7 @@ const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
-const uriUtil    = require('mongodb-uri');
+const uriUtil = require('mongodb-uri');
 
 const app = express();
 const router = express.Router();
