@@ -4,4 +4,4 @@ This repo contains the code for the Intro to Node and Mongo course at Scotch Sch
 
 ## Scotch School
 
-[Take the course on Scotch.io](#)
+[Take the course on Scotch.io](https://school.scotch.io/build-a-restful-nodejs-api)
